@@ -100,33 +100,6 @@ IntegerArray, Double Array, StringArray and String2DArray Data Structures For C.
   
 	printString2DArray(part);
 
-  //gets a column from the 2D array and returns it as an array
-  
-	struct StringArray* firstOdds = getColumnStringArray(part, 0);
-	printf("First Column\n");
-	printStringArray(firstOdds);
-
-	struct DoubleArray* firstOddDouble = getDoubleArray(firstOdds);
-	printf("First Column, In double type\n");
-	printDoubleArray(firstOddDouble);
-
-	struct StringArray* secondOdds = getColumnStringArray(part, 1);
-	printf("Second Column\n");
-	printStringArray(secondOdds);
-
-	struct DoubleArray* secondOddDouble = getDoubleArray(secondOdds);
-	printf("Second Column, In double type\n");
-	printDoubleArray(secondOddDouble);
-
-	printf("Correlation of the two columns %.2f\n",corrDoubleArray(secondOddDouble, firstOddDouble));
-
-	freeStringDArray(firstOdds);
-	freeStringDArray(secondOdds);
-	freeDoubleArray(firstOddDouble);
-	freeDoubleArray(secondOddDouble);
-	freePartString2DArray(part);
-	freeString2DArray(trainData);
-
 
   //creates an array of strings
   
