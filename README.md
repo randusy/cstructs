@@ -1,6 +1,10 @@
 # cstructs
 IntegerArray, Double Array, StringArray and String2DArray Data Structures For C.
 
+# Purpose
+
+Provide essential data structure to simplify the development of programs in c.
+
 # How to use the library
 
   //clone the library and put it in your project
